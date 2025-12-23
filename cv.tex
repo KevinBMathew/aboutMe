@@ -34,6 +34,12 @@
 \setlength\bibitemsep{1em}
 \usepackage{fontawesome5}
 
+% Disable hyphenation and ensure full justification for body text
+\usepackage[none]{hyphenat}
+\usepackage{ragged2e}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
 % job listing environments
 \newenvironment{jobshort}[2]
     {\begin{tabularx}{\linewidth}{@{}l X r@{}} \textbf{#1} & \hfill &  #2 \\[3.75pt] \end{tabularx}}
@@ -50,6 +56,8 @@
 %----------------------------------------------------------------------------------------
 \begin{document}
 \pagestyle{empty} 
+% Use full justification for document body (keeps words from being hyphenated)
+\justifying
 
 %----------------------------------------------------------------------------------------
 %	TITLE / CONTACT INFO
@@ -68,8 +76,8 @@
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X r@{}}	
-2023 - 2027 & B.E. (Hons.) Electronics and Communication Engineering & \textbf{BITS Pilani, Goa} \\
-& CGPA: 8.13 (Upto Semester 4) & \\
+2023 - 2027 & B.E. (Hons.) Electronics and Communication Engineering - & \textbf{8.13/10} \\
+& BITS Pilani, Goa Campus &  \textsuperscript{\textbf{(Upto Semester 4)}}\\
 May 2023 & ISC (Class XII) - The Bishop's School, Camp & \textbf{97.6\%} \\
 May 2021 & ICSE (Class X) - St. Mary's School, Pune & \textbf{99.0\%} \\
 \end{tabularx}
@@ -82,13 +90,19 @@ May 2021 & ICSE (Class X) - St. Mary's School, Pune & \textbf{99.0\%} \\
 \item Worked at the \textbf{Indian Meteorological Department} on sensor fusion and algorithm development.
 \item Implemented custom fuzzy logic and Kalman filters for high-accuracy temperature sensing.
 \item Developed embedded code for ESP8266 hardware using C++ and PlatformIO.
-\item Conducted data analysis in MATLAB and documented results for research publication.
+\item Conducted data analysis using Python and documented results for research publication.
 \end{joblong}
 
 %----------------------------------------------------------------------------------------
 %	PROJECTS
 %----------------------------------------------------------------------------------------
 \section{Projects}
+
+\begin{joblong}{Development of Flexible Tactile Sensors}{Dec 2025 - Present}
+\item Currently in process of developing tactile sensors for robotic perception under Dr. Tushar Sakorikar.
+\item Project is currently in literature review and ideation phase with plans to start fabrication by February 2026
+\end{joblong}
+
 \begin{joblong}{Low Cost Electromechanical Tensile Tester}{May 2025 - Dec 2025}
 \item Developed a horizontal tensile tester for the characterization of soft materials under Dr. Tushar Sakorikar.
 \item Executed end-to-end development including mechanical design, 3D modeling, and electronics architecture.
@@ -107,6 +121,7 @@ May 2021 & ICSE (Class X) - St. Mary's School, Pune & \textbf{99.0\%} \\
 \item Designed custom mounts for cameras and sensors using Fusion 360.
 \end{joblong}
 
+\pagebreak
 %----------------------------------------------------------------------------------------
 %	POSITIONS OF RESPONSIBILITY / VOLUNTEERING
 %----------------------------------------------------------------------------------------

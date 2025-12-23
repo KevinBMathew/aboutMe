@@ -1,4 +1,4 @@
-NAME=cv
+NAME=cv_KevinMathew
 
 all:
 	latexmk -pdf ${NAME}.tex
