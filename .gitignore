@@ -1,0 +1,16 @@
+# Ignore everything in the repo
+/*
+
+# But keep this .gitignore so it can be tracked
+!/.gitignore
+
+# Keep the allowed files and directories (from the repo listing)
+!/.github/
+!/.github/workflows/
+!/.github/workflows/**
+!/CNAME
+!/Makefile
+!/README.md
+!/citations.bib
+!/cv.tex
+!/index.html
