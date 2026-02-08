@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         # Add the names of your tex files here (without extension)
-        filename: [cv_KevinMathew, cv_Intel, cv_IntelSW]
+        filename: [cv_KevinMathew, cv_IntelHW, cv_IntelSW]
     env:
       # Edit here with the names of your latex file and directory (can use ".")
       DIR: .
