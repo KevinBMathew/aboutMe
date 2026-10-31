@@ -34,7 +34,7 @@
 \setlength\bibitemsep{1em}
 \usepackage{fontawesome5}
 
-% Disable hyphenation and ensure full justification for body text
+% Disable hyphenation and use left-aligned body text
 \usepackage[none]{hyphenat}
 \usepackage{ragged2e}
 \hyphenpenalty=10000
@@ -47,7 +47,7 @@
 
 \newenvironment{joblong}[2]
     {\begin{tabularx}{\linewidth}{@{}l X r@{}} \textbf{#1} & \hfill &  #2 \\[3.75pt] \end{tabularx}
-    \begin{minipage}[t]{\linewidth}
+    \begin{minipage}[t]{\linewidth}\raggedright
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]}
     {\end{itemize} \end{minipage}}
 
@@ -56,8 +56,8 @@
 %----------------------------------------------------------------------------------------
 \begin{document}
 \pagestyle{empty} 
-% Use full justification for document body (keeps words from being hyphenated)
-\justifying
+% Keep body text left-aligned without stretching word spacing
+\raggedright
 
 %----------------------------------------------------------------------------------------
 %	TITLE / CONTACT INFO
@@ -66,9 +66,9 @@
 \Huge{Kevin Benny Mathew} \\[7.5pt]
 \href{https://github.com/KevinBMathew}{\raisebox{-0.05\height}\faGithub\ KevinBMathew} \ $|$ \ 
 \href{https://linkedin.com/in/kevin-mathew-672774249}{\raisebox{-0.05\height}\faLinkedin\ Kevin Mathew} \ $|$ \ 
-\href{mailto:f20230143@goa.bits-pilani.ac.in}{\raisebox{-0.05\height}\faEnvelope \ f20230143@goa.bits-pilani.ac.in} \ $|$ \ 
+\href{mailto:kevin.mathew@outlook.in}{\raisebox{-0.05\height}\faEnvelope \ kevin.mathew@outlook.in} \ $|$ \ 
 \href{tel:+917776063339}{\raisebox{-0.05\height}\faMobile \ +91-7776063339} \\
-\normalsize{A901, La Cresta, Sopan Baug, Ghorpadi, Pune, Maharashtra - 411001}
+\normalsize{Pune, India}
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -76,18 +76,24 @@
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X r@{}}	
-2023 - 2027 & B.E. (Hons.) Electronics and Communication Engineering - & \textbf{8.21/10} \\
-& BITS Pilani, Goa Campus &  \textsuperscript{\textbf{(Upto Semester 5)}}\\
-May 2023 & ISC (Class XII) - The Bishop's School, Camp & \textbf{97.6\%} \\
-May 2021 & ICSE (Class X) - St. Mary's School, Pune & \textbf{99.0\%} \\
+Expected 2027 & B.E. (Hons.) Electronics and Communication Engineering & \textbf{CGPA: 8.19/10} \\
+& BITS Pilani, Goa Campus & \small{(through Semester 6)}\\
+May 2023 & ISC (Class XII) -- The Bishop's School, Camp & \textbf{97.6\%} \\
+May 2021 & ICSE (Class X) -- St. Mary's School, Pune & \textbf{99.0\%} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 \section{Work Experience}
-\begin{joblong}{Summer Intern \href{https://github.com/KevinBMathew/SensorFusion_ESP8266}{\raisebox{-0.05\height}\faGithub}}{May 2025 - Aug 2025}
-\item Worked at the \textbf{Indian Meteorological Department} on sensor fusion and algorithm development.
+\begin{joblong}{Research Intern -- Max Planck Institute for Intelligent Systems \href{https://is.mpg.de/hi/research_projects/haptic-empathetic-robot-animal-hera}{\raisebox{-0.05\height}\faGlobe}}{Aug 2026 -- Present}
+\item Contributing to Dr Rachael Burns' Haptic Empathetic Robot Animal (HERA) project.
+\item Developing tactile sensing methods to distinguish robot self-touch from external contact, preventing self-touch from interfering with human--robot interaction.
+\item Updating the tactile sensing system to integrate fully 3D-printed force sensors.
+\end{joblong}
+
+\begin{joblong}{Summer Intern -- India Meteorological Department \href{https://github.com/KevinBMathew/SensorFusion_ESP8266}{\raisebox{-0.05\height}\faGithub}}{May 2025 -- Aug 2025}
+\item Worked on sensor fusion and algorithm development.
 \item Implemented custom fuzzy logic and Kalman filters for high-accuracy temperature sensing.
 \item Developed embedded code for ESP8266 hardware using C++ and PlatformIO.
 \item Conducted data analysis using Python and documented results for research publication.
@@ -98,27 +104,26 @@ May 2021 & ICSE (Class X) - St. Mary's School, Pune & \textbf{99.0\%} \\
 %----------------------------------------------------------------------------------------
 \section{Projects}
 
-\begin{joblong}{Development of Flexible Tactile Sensors}{Dec 2025 - Present}
-\item Currently in process of developing tactile sensors for robotic perception under Dr. Tushar Sakorikar.
-\item Project has finished literature review and we are in the process of prototyping a piezo-resistive tactile sensor.
+\begin{joblong}{Development of Flexible Tactile Sensors}{Dec 2025 -- May 2026}
+\item Replicated existing tactile sensor designs and helped develop a custom flexible piezoresistive force sensor under Dr Tushar Sakorikar.
+\item Used silicone (PDMS) with carbon nanotubes (CNTs) and reduced graphene oxide (rGO) to sense force through changes in electrical resistance.
 \end{joblong}
 
-\begin{joblong}{Low Cost Electromechanical Tensile Tester}{May 2025 - Dec 2025}
-\item Developed a horizontal tensile tester for the characterization of soft materials under Dr. Tushar Sakorikar.
-\item Executed end-to-end development including mechanical design, 3D modeling, and electronics architecture.
+\begin{joblong}{Low-Cost Electromechanical Tensile Tester}{May 2025 -- Apr 2026}
+\item Developed a horizontal tensile tester costing under INR 25,000 for soft-material characterisation under Dr Tushar Sakorikar.
+\item Executed end-to-end development, including mechanical design, 3D modelling, and electronics architecture.
 \item Integrated motion control using Teensy microcontrollers, stepper motors, and a custom UI.
 \end{joblong}
 
-\begin{joblong}{Project Vulcan: Humanoid Robot \href{https://github.com/ERC-BPGC/project-vulcan}{\raisebox{-0.05\height}\faGithub}}{Feb 2024 - Present}
+\begin{joblong}{Project Vulcan: Humanoid Robot \href{https://github.com/ERC-BPGC/project-vulcan}{\raisebox{-0.05\height}\faGithub}}{Feb 2024 -- May 2026}
 \item Led the bionic arm subsystem, developing a 7-DOF biomimetic robotic arm emulating human movement.
-\item Improved internal mechanical systems for facial movements, specifically eyes and mouth.
+\item Improved internal mechanical systems for facial movements, specifically eye and mouth movements.
 \item Implemented amplifiers for microphones located in the robot's ears.
 \end{joblong}
 
-\begin{joblong}{Project Kratos: Mars Rover \href{https://github.com/KevinBMathew/irc2025}{\raisebox{-0.05\height}\faGithub}}{Aug 2024 - Present}
-\item Core member of the electronics subsystem; migrated the code stack from ROS Noetic to ROS2 Humble.
+\begin{joblong}{Project Kratos: Mars Rover \href{https://github.com/KevinBMathew/irc2025}{\raisebox{-0.05\height}\faGithub}}{Aug 2024 -- Feb 2026}
+\item Served as a core member of the electronics subsystem; migrated the code stack from ROS Noetic to ROS 2 Humble.
 \item Redesigned the electronics box for modularity, easier assembly, and improved debugging.
-\item Designed custom mounts for cameras and sensors using Fusion 360.
 \end{joblong}
 
 \pagebreak
@@ -126,29 +131,31 @@ May 2021 & ICSE (Class X) - St. Mary's School, Pune & \textbf{99.0\%} \\
 %	POSITIONS OF RESPONSIBILITY / VOLUNTEERING
 %----------------------------------------------------------------------------------------
 \section{Leadership \& Volunteering}
-\begin{jobshort}{Research Head - Electronics and Robotics Club (ERC), BITS Goa}{Apr 2025 - Present}
+\begin{jobshort}{Research Head -- Electronics and Robotics Club (ERC), BITS Goa}{Apr 2025 -- Apr 2026}
 \begin{itemize} [label={-}]
-\item Guiding \textbf{75+} students across multiple robotics projects (Vulcan, Snakebot, Quadruped, Automated Foosball, Automated Air Hockey)
-\item Managing project progress and integrating electronics, mechanical, and automation verticals.
-\item Organized and designed ROS2-based hackathon with \textbf{200+ participants nationwide}
+\raggedright
+\item Guided \textbf{75+} students across multiple robotics projects (Vulcan, Snakebot, Quadruped, Automated Foosball, Automated Air Hockey).
+\item Managed project progress and integrated electronics, mechanical, and automation verticals.
+\item Organised and designed a ROS 2-based hackathon with \textbf{200+ participants nationwide}.
 \end{itemize}
 \end{jobshort}
 
-\begin{jobshort}{Committee Member - Sandbox Innovation Lab, BITS Goa}{Feb 2024 - Present}
-Maintaining lab equipment of the campus student-run (3D printers, laser cutters) and managing tech club purchases.
+\begin{jobshort}{Committee Member -- Sandbox Innovation Lab, BITS Goa}{Feb 2025 -- May 2026}
+Maintained 3D printers and laser cutters; managed tech club purchases.
 \end{jobshort}
 
-\begin{jobshort}{Volunteer - Abhigyaan, BITS Goa}{Oct 2023 - Present}
-Provided evening tuition classes for K-12 children of campus non-teaching staff.
+\begin{jobshort}{Volunteer -- Abhigyaan, BITS Goa}{Oct 2023 -- May 2026}
+Tutored children of campus non-teaching staff (K--12).
 \end{jobshort}
-\section{Skills \& Proficiency}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-	\textbf{Languages} & C++, C, Python, Java, Verilog \\
-	\textbf{Technologies} & ROS/ROS2, Git, Linux, CV, Microcontrollers (ESP32, Arduino, Teensy, ESP8266) \\
-	\textbf{Tools} & KiCAD, Fusion 360, Solidworks, Onshape, MATLAB, PlatformIO, Android Studio \\
-	\textbf{Key Courses} & Control Systems, Microprocessors \& Interfacing, Digital Signal Processing \\
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}X@{}}
+	Programming & C++, C, Python, Java, Verilog \\
+	Robotics \& Embedded Systems & ROS/ROS 2, Microcontrollers (ESP, Arduino, STM32) \\
+	Design \& Engineering Tools & KiCad, SOLIDWORKS, Onshape, MATLAB \\
+	Development Tools & Git, Linux, PlatformIO, Android Studio \\
+	\textbf{Key Courses} & Control Systems, Microprocessors \& Interfacing, Digital Signal Processing, Object-Oriented Programming\\
 \end{tabularx}
 
 \vfill
-\center{\footnotesize Last updated: \today}
+{\centering\footnotesize Last updated: \number\day~\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi~\number\year\par}
 \end{document}
